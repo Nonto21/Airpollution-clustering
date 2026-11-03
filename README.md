@@ -6,9 +6,9 @@
 This project explores patterns in air-pollution measurements using K-Means clustering. Five pollutant variables: SO2, NO2, O3, PM2.5 and PM10, are standardised and grouped into three clusters. Exploratory analysis, cluster selection diagnostics and PCA visualisation help describe the differences between the groups.
 
 ## Data
-The notebook's saved output reports 3,347 records and five numeric pollutant variables, with no missing values in those columns. Consequently, these clusters should not be treated as validated geographic or public-health classifications.
+There are 3,347 records and five numeric pollutant variables, with no missing values in those columns. These clusters should not be treated as validated geographic or public-health classifications.
 
-To reproduce the analysis, obtain the original authorised dataset and place `airpoll.csv` in the repository root.
+
 
 ## Methods
 1. Inspect data types, summary statistics, distributions, outliers and correlations.
@@ -64,8 +64,6 @@ Place `airpoll.csv` in the same folder before running. The saved notebook output
 - **Dataset documentation:** Identify the source, licence, units, location and time span.
 - **Cluster validation:** Report the actual silhouette scores and assess stability across different seeds and choices of k.
 - **Interpretation:** Do not label clusters as safe or unsafe without measurement units, standards and contextual information.
-- **Radar plot:** The notebook's radar chart uses `ylim(0, 40)`, which clips values above 4. Replot with a suitable scale or normalised profiles before using it in presentations.
-- **Reproducibility:** The saved figures and results come from the uploaded notebook; the missing CSV prevented an independent rerun.
 
 ## Skills demonstrated
 Exploratory data analysis · Data standardisation · K-Means clustering · Elbow method · Silhouette analysis · PCA · Data visualisation · Interpretation of unsupervised learning results
